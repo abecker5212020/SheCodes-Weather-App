@@ -1,45 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<link rel="stylesheet" href="src/style.css" class="rel">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" class="rel" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
-</head>
-<body>
-<div class="container">
-    <div class="weather-app-wrapper">
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
         <div class="weather-app">
-         <h1>New York, New York</h1>
+          <div class="overview">
+            <h1>New York, New York</h1>
             <ul>
-             <li>Tuesday</li>
-             <li>Clear</li>
+              <li>Tuesday</li>
+              <li>Clear</li>
             </ul>
-                <div class="row">
-                 <div class="col-6">
-                     <div class="clearfix">
-                        <img src="img/clear-day.svg" alt="clear" class= "float-left" />
-                        <div class="float-left">16°C | 55°F </div>
-                     </div>
-                    </div>
-                 <div class="col-6">
-                    <ul>
-                        <li>Precipitation:</li>
-                        <li>Wind:</li>
-                        <li>Humidity:</li>
-                    </ul>
-                 </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img src="img/clear-day.svg" alt="clear" class="float-left" />
+                <div class="float-left">
+                  <strong>16</strong>
+                  <span class="units">°C | <a href="#">°F </a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation:</li>
+                <li>Wind:</li>
+                <li>Humidity:</li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div> 
-    <small> <a href="https://github.com/abecker5212020/SheCodes-Weather-App" target="blank">Open source code</a> by Amie Becker </small>
+        <small>
+          <a
+            href="https://github.com/abecker5212020/SheCodes-Weather-App"
+            target="blank"
+            >Open source code</a
+          >
+          by Amie Becker
+        </small>
+      </div>
     </div>
-</div>
     <script src="src/app.js"></script>
-</body>
+  </body>
 </html>
