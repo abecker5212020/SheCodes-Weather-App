@@ -14,27 +14,31 @@
 </head>
 <body>
 <div class="container">
-    <div class="weather-app">
-        <h1>New York, New York</h1>
+    <div class="weather-app-wrapper">
+        <div class="weather-app">
+         <h1>New York, New York</h1>
             <ul>
-            <li>Tuesday</li>
-            <li>Clear</li>
+             <li>Tuesday</li>
+             <li>Clear</li>
             </ul>
-        <div class="row">
-            <div class="col-6">
-             <img class= "sunny" src="img/clear-day.svg" alt="clear" />
-                16°C | 55°F
-            </div>
-            <div class="col-6">
-                <ul>
-                    <li>Precipitation:</li>
-                    <li>Wind:</li>
-                    <li>Humidity:</li>
-                </ul>
-            </div>
+                <div class="row">
+                 <div class="col-6">
+                     <div class="clearfix">
+                        <img src="img/clear-day.svg" alt="clear" class= "float-left" />
+                        <div class="float-left">16°C | 55°F </div>
+                     </div>
+                    </div>
+                 <div class="col-6">
+                    <ul>
+                        <li>Precipitation:</li>
+                        <li>Wind:</li>
+                        <li>Humidity:</li>
+                    </ul>
+                 </div>
         </div>
-    </div>
+    </div> 
     <small> <a href="https://github.com/abecker5212020/SheCodes-Weather-App" target="blank">Open source code</a> by Amie Becker </small>
+    </div>
 </div>
     <script src="src/app.js"></script>
 </body>
