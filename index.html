@@ -11,6 +11,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" class="rel" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,10 +26,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>New York, New York</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Tuesday</li>
-              <li>Clear</li>
+              <li id="description"></li>
             </ul>
           </div>
 
@@ -37,7 +38,7 @@
               <div class="d-flex weather-temperature">
                 <img src="img/clear-day.svg" alt="clear" class="float-left" />
                 <div class="float-left">
-                  <strong>16</strong>
+                  <strong id="temperature"></strong>
                   <span class="units">°C | <a href="#">°F </a></span>
                 </div>
               </div>
@@ -46,7 +47,7 @@
               <ul>
                 <li>Precipitation:</li>
                 <li>Wind:</li>
-                <li>Humidity:</li>
+                <li>Humidity:<span id="humidtiy"></span>%</li>
               </ul>
             </div>
           </div>
