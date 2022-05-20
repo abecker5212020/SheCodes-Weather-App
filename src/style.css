@@ -19,12 +19,14 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-transform: capitalize;
+
   color: #cca8e9;
   font-size: 18px;
   font-weight: 100;
   line-height: 21px;
 }
+
+li:first-letter {text-transform: capitalize;}
 
 .weather-app-wrapper {
   max-width: 700px;
