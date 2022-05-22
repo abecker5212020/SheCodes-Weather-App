@@ -43,7 +43,7 @@
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
-              <li>Last updated:<span id="date"> </span></li>
+              <li><span id="date"> </span></li>
               <li id="description"></li>
             </ul>
           </div>
@@ -54,14 +54,15 @@
                 <img src="img/01d.svg" alt="clear" class="float-left" id="icon" />
                 <div class="float-left">
                   <strong id="temperature"></strong>
-                  <span class="units">°C | <a href="#">°F </a></span>
+                  <span class="units">
+                    <a href="#" id="celsius-link" class="active">°C </a>| <a href="#" id="fahrenheit-link">°F </a></span>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation:</li>
-                <li>Wind:<span id="wind"></span>mpH</li>
+                <li>Precipitation: </li>
+                <li>Wind: <span id="wind"></span> Skm/h</li>
                 <li>Humidity:<span id="humidtiy"></span>%</li>
               </ul>
             </div>
