@@ -41,6 +41,7 @@ function displayTempertaure(response) {
     let windElement = document.querySelector("#wind");
     let dateElement = document.querySelector("#date");
     let iconElement = document.querySelector("#icon");
+    let precipitationElement =document.querySelector("#precipitation");
 
     celsiusTemperature=response.data.main.temp;
 
@@ -52,6 +53,7 @@ function displayTempertaure(response) {
     dateElement.innerHTML=formatDate(response.data.dt*1000);
     iconElement.setAttribute(`src`, `img/${response.data.weather[0].icon}.svg`);
     iconElement.setAttribute("alt",response.data.weather[0].description);
+    precipitationElement.innerHTML=Math.round(response.data.main.precipitation);
 }
 
 
