@@ -123,21 +123,22 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 function displayFahrenheitTemperature(event) {
-    event.preventDefault();
-    let fahrenheitTemperature=(celsiusTemperature * 9/5) + 32 ;
-    //remove the active class from celsius link
-    celsiusLink.classList.remove("active");
-    fahrenheitLink.classList.add("active");
-    let temperatureElement=document.querySelector("#temperature");
-    temperatureElement.innerHTML=Math.round(fahrenheitTemperature);
+  event.preventDefault();
+  // let fahrenheitTemperature=(celsiusTemperature * 9/5) + 32 ;
+  //remove the active class from celsius link
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-function displayCelsiusTemperature(event){
-    event.preventDefault();
-    celsiusLink.classList.add("active");
-    fahrenheitLink.classList.remove("active");
-    let temperatureElement=document.querySelector("#temperature");
-    temperatureElement.innerHTML=Math.round(celsiusTemperature);
+function displayCelsiusTemperature(event) {
+  let celsiusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 let fahrenheitTemperature=null;
 
