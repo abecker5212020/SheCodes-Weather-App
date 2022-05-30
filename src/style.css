@@ -28,6 +28,8 @@ li {
 
 li:first-letter {text-transform: capitalize;}
 
+
+
 .weather-app {
   max-width: 700px;
   margin: 30px auto;
@@ -36,6 +38,7 @@ li:first-letter {text-transform: capitalize;}
   background-repeat: no-repeat;
   background-position: center;
 }
+
 
 .weather-app {
   padding: 20px;
@@ -114,3 +117,5 @@ width:250px;}
     border-radius: 15px;
     padding: 5px;
     }
+
+.weather-app-wrapper {text-align: center; color:purple;
