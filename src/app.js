@@ -61,8 +61,8 @@ function displayForecast(response) {
        </div>
         <img src=img/${forecastDay.weather[0].icon}.svg alt="" width="44" />
       <div class="weather-forecast-temperature">
-     <span class="weather-forecast-temperature-max"> ${Math.round(forecastDay.temp.max)} °</span>
-     <span class="weather-forecast-temperature-min">${Math.round(forecastDay.temp.min)} °</span>
+     <span class="weather-forecast-temperature-max"> ${Math.round(forecastDay.temp.max)}°F</span> |
+     <span class="weather-forecast-temperature-min">${Math.round(forecastDay.temp.min)}°F</span>
    </div>
  </div> `;
       }
@@ -88,7 +88,8 @@ function displayTempertaure(response) {
     let windElement = document.querySelector("#wind");
     let dateElement = document.querySelector("#date");
     let iconElement = document.querySelector("#icon");
-    let precipitationElement =document.querySelector("#precipitation");
+    let highElement =document.querySelector("#high");
+    let lowElement=document.querySelector("#low");
 
     fahrenheitTemperature=response.data.main.temp;
 
@@ -100,7 +101,8 @@ function displayTempertaure(response) {
     dateElement.innerHTML=formatDate(response.data.dt*1000);
     iconElement.setAttribute(`src`, `img/${response.data.weather[0].icon}.svg`);
     iconElement.setAttribute("alt",response.data.weather[0].description);
-    precipitationElement.innerHTML=Math.round(response.data.main.precipitation);
+    highElement.innerHTML=Math.round(response.data.main.temp_max);
+    lowElement.innerHTML=Math.round(response.data.main.temp_min);
 
     getForecast(response.data.coord);
 }
