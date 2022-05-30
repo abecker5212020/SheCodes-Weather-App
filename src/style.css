@@ -45,8 +45,8 @@ li:first-letter {text-transform: capitalize;}
 
 .weather-temperature img {
   margin-right: 5px;
-  height: 64px;
-  width: 64px;
+  height:200px;
+  width: 200px;
 }
 
 .weather-temperature strong {
