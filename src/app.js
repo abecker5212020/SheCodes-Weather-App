@@ -105,6 +105,11 @@ function displayTempertaure(response) {
     lowElement.innerHTML=Math.round(response.data.main.temp_min);
 
     getForecast(response.data.coord);
+
+    let backgroundElement= document.querySelector(".weather-app-wrapper");
+
+
+  backgroundElement.style.backgroundImage = `src/img/background.jpg`;
 }
 
 
