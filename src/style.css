@@ -20,7 +20,7 @@ li {
   margin: 0;
   padding: 0;
 
-  color: #cca8e9;
+  color: #77529e;
   font-size: 18px;
   font-weight: 100;
   line-height: 21px;
@@ -91,6 +91,13 @@ li:first-letter {text-transform: capitalize;}
 .weather-forecast-temperature {
     font-size: 14px;
 }
+
+#special-weather {background: linear-gradient(68.4deg, rgb(248, 182, 204) 0.5%, rgb(192, 198, 230) 49%, rgb(225, 246, 240) 99.8%);
+  padding: 5px;
+  border-radius: 15px;
+  opacity: 0.8;
+height: 115px;
+width:250px;}
 
 .weather-wrapper-container {
     margin-top: 10px;
